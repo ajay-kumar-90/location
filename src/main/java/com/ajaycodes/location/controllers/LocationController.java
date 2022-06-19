@@ -18,7 +18,7 @@ import static com.ajaycodes.location.constant.LocationConstant.DISPLAY_LOCATIONS
 import static com.ajaycodes.location.constant.LocationConstant.LOCATIONS;
 
 @Controller
-@RequestMapping("/api/v1/")
+//@RequestMapping("/api/v1/")
 public class LocationController {
 
     private final LocationService locationService;
