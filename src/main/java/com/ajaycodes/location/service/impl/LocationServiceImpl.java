@@ -39,7 +39,7 @@ public class LocationServiceImpl implements LocationService {
     public Location saveLocation(Location location) throws MessagingException {
         Location savedLocation = locationRepository.save(location);
         //sendEmail(location);
-        return savedLocation;
+         return savedLocation;
     }
 
     private void sendEmail(Location location) throws MessagingException {
