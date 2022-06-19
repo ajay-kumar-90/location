@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save Location</title>
+</head>
+<body>
+<form action="saveLocation" method="post">
+<pre>
+    Id: <input name="id" type="text"/>
+    Code: <input name="code" type="text"/>
+    Name: <input name="name" type="text"/>
+    Type: URBAN <input name="type" type="radio" value="URBAN"/>
+          RURAL <input name="type" type="radio" value="RURAL"/>
+    <input type="submit" value="save"/>
+</pre>
+</form>
+<b th:text="${msg}"></b>
+<a href="displayLocations">view All</a>
+
+</body>
+</html>

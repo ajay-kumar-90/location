@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Locations</title>
+</head>
+<body>
+<table>
+    <caption>Locations</caption>
+    <tr>
+        <!-- Heading -->
+        <th>Id</th>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Type</th>
+    </tr>
+    <tr th:each="location:${locations}">
+        <!-- Data -->
+        <td th:text="${location.id}"></td>
+        <td th:text="${location.code}"></td>
+        <td th:text="${location.name}"></td>
+        <td th:text="${location.type}"></td>
+        <td><a th:href="'deletelocation?id='+${location.id}">delete</a></td>
+        <td><a th:href="'showUpdateLocation?id='+${location.id}">edit</a></td>
+
+    </tr>
+
+</table>
+</body>
+</html>
